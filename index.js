@@ -87,14 +87,14 @@ function renderOneProduct(product) {
     newElement.className = "shop-items column";
     newElement.innerHTML = `
     <div class="shop-item">
-    <span class="cart-discount cart-column" style="color:blue">$${product.discount}Off</span>
+    <span class="cart-discount cart-column" style="color:green">$${product.discount}Off</span>
                 <span class="shop-item-title">${product.name}</span>
                 <img class="shop-item-image" src="${product.image}">
                 <div class="shop-item-details">
                     <span  class="price"> $${product.price.display}</span>
                     <span class="shop-item-price">$${product.price.actual}</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                 </div>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
     `
     document.querySelector("#clothes-box").append(newElement);
